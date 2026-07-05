@@ -20,8 +20,21 @@ int main(void)
 	printf("Menor a 18.5       | Bajo Peso\n");
 	printf("18.5 a 24.9        | Normal\n");
 	printf("25.0 a 29.9        | Sobrepeso\n");
-	printf("Mayor o igual a 30 | Obesidad");
-	
+	printf("Mayor o igual a 30 | Obesidad\n\n");
+
+	printf("Segun el indice su condicion es: ");
+
+	if(bim>=30)
+		printf("Obesidad");
+	else if(bim>=25.0)
+		printf("Sobrepeso");
+	else if(bim>=18.5)
+		printf("Normal");
+	else
+		printf("Bajo Peso");
+
+
+	printf("\n\n");	
 	
 	return 0;
 }
