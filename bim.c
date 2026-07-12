@@ -2,15 +2,27 @@
 
 int main(void) 
 {
-	float p;
-	float a;
-	float bim;
+	float p=0;
+	float a=0;
+	float bim=0;
+
+
+	do{
 	
-	printf("Ingrese el peso en kg: ");
-	scanf("%f",&p);
-	printf("Ingrese su altura en metros: ");
-	scanf("%f",&a);
+
+		printf("Ingrese el peso en kg: ");
+		scanf("%f",&p);
+		printf("Ingrese su altura en metros: ");
+		scanf("%f",&a);
+
+
+		if(!(p>0 && a>0)) 
+			printf("\nIngrese un número positivio\n");
 	
+	
+	}while(!(p>0 && a>0));
+
+
 	bim=p/(a*a);
 	
 	printf("Su indice de masa corporal es: %.2f\n\n",bim);
